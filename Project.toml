@@ -1,0 +1,13 @@
+name = "NotMacro"
+uuid = "e5e706a9-49c7-4701-89e1-aff70d94367a"
+authors = ["Stephan Sahm <stephan.sahm@jolin.io> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.6"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
