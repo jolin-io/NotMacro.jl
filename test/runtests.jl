@@ -9,7 +9,12 @@ doctest(NotMacro, manual=false)
     @test (@not false && true) == true
     @test (@not true | false) == false
     @test (@not false & true) == true
+
     @test (@not false ⊻ false) == true
-    @test (@not false ⊼ true) == false
-    @test (@not true ⊽ false) == true
+    if isdefined(Base, :⊼)
+        @test (@not false ⊼ true) == false
+    end
+    if isdefined(Base, :⊽)
+        @test (@not true ⊽ false) == true
+    end
 end
