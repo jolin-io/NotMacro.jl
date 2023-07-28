@@ -20,7 +20,7 @@ works
 julia> @macroexpand if @not isodd(2) & @not iseven(3) & true
            println("works")
        end
-:(if (!)(isodd(2)) & ((!)(iseven(3)) & true)
+:(if !(isodd(2)) & (!(iseven(3)) & true)
       #= none:2 =#
       println("works")
   end)
