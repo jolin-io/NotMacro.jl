@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## Released [0.1.1] - 2023-01-16
+
+### Fixed
+- recursive case got fixed, including large testset for nesting 3 operators.
+- double negation `@not @not ...`
+
 ## Released [0.1.0] - 2023-01-16
 
 initial release
